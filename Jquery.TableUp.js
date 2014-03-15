@@ -4,9 +4,9 @@
         		TitleUpFxElement=TitleUpFxElement||"";
         		$(this).find(' tbody tr:has(th)').prepend("<th>"+TitleUpFxElement+"</th>");
 		  $(this).find('tbody tr:not(:has(th))').each(function () {
-		  	$(this).prepend("<a class='btnUp' href='javascript:void(0)'><img class='kImage' alt='Move Task Up' src='../img/go-up.png'></a><a href='javascript:void(0)'><img class='linkImage' alt='Delete Task' src='../img//trash.png'></a>");
+		  	$(this).prepend("<a class='TUp' href='javascript:void(0)'><img class='Tup' alt='Move Task Up' src='../img/go-up.png'></a><a href='javascript:void(0)'><img class='Tdown' alt='Delete Task' src='../img//trash.png'></a>");
 		  });
-$('.kImage').on('click',function(){
+$('.Tup').on('click',function(){
 	console.log(this);
 	var $actualToUp = $(this).parent().parent();
         var $TaskToDown = $actualToUp.prev();
@@ -26,7 +26,7 @@ $('.kImage').on('click',function(){
         }
         return false;
 });
-$('.linkImage').on('click',function(){
+$('.Tdown').on('click',function(){
 	  $(this).parent().parent().fadeOut('slow', function () {
             $(this).remove();
         });
