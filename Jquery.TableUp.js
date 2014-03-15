@@ -3,7 +3,7 @@
         	TableUp: function (TitleUpFxElement) {
         		TitleUpFxElement=TitleUpFxElement||"";
         		$(this).find(' tbody tr:has(th)').prepend("<th>"+TitleUpFxElement+"</th>");
-		  $('table tbody tr:not(:has(th))').each(function () {
+		  $(this).find('tbody tr:not(:has(th))').each(function () {
 		  	$(this).prepend("<a class='btnUp' href='javascript:void(0)'><img class='kImage' alt='Move Task Up' src='../img/go-up.png'></a><a href='javascript:void(0)'><img class='linkImage' alt='Delete Task' src='../img//trash.png'></a>");
 		  });
 $('.kImage').on('click',function(){
