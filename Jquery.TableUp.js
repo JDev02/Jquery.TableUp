@@ -22,6 +22,7 @@ $('.Tup').on('click',function(){
                     $TaskToDown.fadeIn('5000');
                 });
             });
+
           
         }
         return false;
