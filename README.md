@@ -1,1 +1,3 @@
+Update: Iba a eliminar este repo, pero son mis inicios como 'javascriptero'... me da miedo ese código, pero me sirve para recordar que todos partimos de muy abajo....
+
 Jquery.TableUp
